@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500);
+@import "gray.min.css";
 
 object {
     display: none;
@@ -14,6 +15,14 @@ html, body {
 body {
     min-height: 100%;
     color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 100;
+}
+
+p {
+    font-weight: 300;
 }
 
 #wrapper {
@@ -111,4 +120,44 @@ nav ul li.active {
 
 .row.bio p{
     font-size: 18px;
+}
+
+#contactCont {
+    text-align: center;
+
+    font-weight: 100;
+
+    color: #fff;
+}
+
+.socialIcons {
+    display: inline-block;
+    text-align: left;
+    line-height: 6rem;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    color: #fff;
+
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.socialIcons a:hover {
+    text-decoration: none;
+    color: #a0a0a0;
+}
+
+.socialIcons i {
+    margin: 0 50px;
+    vertical-align: middle;
+}
+
+.socialIcons span {
+    font-size: 2rem;
+    vertical-align: middle;
 }
