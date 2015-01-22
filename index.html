@@ -20,7 +20,9 @@
     
     <!-- Begin Stylesheet -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/common.css" media="all"/>
+    <link rel="stylesheet" href="css/style.css" media="only screen and (min-width: 970px)"/>
+    <link rel="stylesheet" href="css/style-xs.css" media="only screen and (max-width: 969px)"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- END Stylesheet -->
 
@@ -40,10 +42,10 @@
     <nav>
         <div class="container">
             <ul>
-                <a href="#"><li class="home active"><i class="fa fa-home fa-2x"></i><br/>Home</li></a>
-                <a href="#portfolio"><li class="portfolio"><i class="fa fa-book fa-2x"></i><br/>Portfolio</li></a>
-                <a href="#bio"><li class="bio"><i class="fa fa-user fa-2x"></i><br/>Bio</li></a>
-                <a href="#contact"><li class="contact"><i class="fa fa-envelope fa-2x"></i><br/>Contact</li></a>
+                <a href="#"><li class="home active"><i class="fa fa-home fa-2x"></i><span class="hidden-sm hidden-xs"><br/>Home</span></li></a>
+                <a href="#portfolio"><li class="portfolio"><i class="fa fa-book fa-2x"></i><span class="hidden-sm hidden-xs"><br/>Portfolio</span></li></a>
+                <a href="#bio"><li class="bio"><i class="fa fa-user fa-2x"></i><span class="hidden-sm hidden-xs"><br/>Bio</span></li></a>
+                <a href="#contact"><li class="contact"><i class="fa fa-envelope fa-2x"></i><span class="hidden-sm hidden-xs"><br/>Contato</span></li></a>
             </ul>
         </div>
     </nav>

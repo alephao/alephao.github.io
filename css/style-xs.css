@@ -10,14 +10,14 @@
     text-align: center;
 
     font-weight: 100;
-    font-size: 6rem;
-    line-height: 5rem;
+    font-size: 2.4rem;
+    line-height: 4rem;
 
     color: #fff;
 }
 
 #aleph span {
-    font-size: 2.3rem;
+    font-size: 1.7rem;
 }
 
 .row.bio {
@@ -38,8 +38,8 @@
 }
 
 .socialIcons {
+    text-align: center;
     display: inline-block;
-    text-align: left;
     line-height: 6rem;
 }
 
@@ -60,11 +60,13 @@
 }
 
 .socialIcons i {
-    margin: 0 50px;
-    vertical-align: middle;
+    margin: 0;
+}
+
+.socialIcons i:first-child {
+    margin-top: 30px;
 }
 
 .socialIcons span {
     font-size: 2rem;
-    vertical-align: middle;
 }
