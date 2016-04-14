@@ -11,19 +11,19 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://alaphao.github.io/stuff/mm1b11.ipa</string>
+					<string>https://alaphao.github.io/maestro/mm1b11.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>display-image</string>
 					<key>url</key>
-					<string>https://alaphao.github.io/stuff/m57x57.png</string>
+					<string>https://alaphao.github.io/maestro/m57x57.png</string>
 				</dict>
 				<dict>
 					<key>kind</key>
 					<string>full-size-image</string>
 					<key>url</key>
-					<string>https://alaphao.github.io/stuff/m512x512.png</string>
+					<string>https://alaphao.github.io/maestro/m512x512.png</string>
 				</dict>
 			</array>
 			<key>metadata</key>
