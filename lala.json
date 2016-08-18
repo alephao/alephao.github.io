@@ -1,3 +1,5 @@
 {
-  stuff: "Hallow"
+  "stuff": "Hallow",
+  "foo": "bar",
+  "bar": 1
 }
