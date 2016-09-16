@@ -1,0 +1,184 @@
+[
+    {
+        "id" : "001",
+        "firstName" : "Mark",
+        "lastName" : "Mason",
+        "role" : "CEO",
+        "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+    },
+    {
+        "teamName" : "iOS",
+        "members" : [
+            {
+                "id" : "002",
+                "firstName" : "Olly",
+                "lastName" : "Berry",
+                "role" : "iOS Team Lead",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png",
+                "teamLead" : true
+            },
+            {
+                "id" : "003",
+                "firstName" : "James",
+                "lastName" : "Frost",
+                "role" : "iOS Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "004",
+                "firstName" : "Liam",
+                "lastName" : "Nichols",
+                "role" : "iOS Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "005",
+                "firstName" : "Chris",
+                "lastName" : "Watson",
+                "role" : "iOS Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "006",
+                "firstName" : "Richard",
+                "lastName" : "Turton",
+                "role" : "iOS Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "007",
+                "firstName" : "Matt",
+                "lastName" : "Colliss",
+                "role" : "iOS Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "008",
+                "firstName" : "David",
+                "lastName" : "Gibson",
+                "role" : "iOS Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "009",
+                "firstName" : "Tom",
+                "lastName" : "Guy",
+                "role" : "iOS Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "010",
+                "firstName" : "Rich",
+                "lastName" : "Hodgkins",
+                "role" : "iOS Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            }
+        ]
+    },
+    {
+        "teamName" : "Android",
+        "members" : [{
+                "id" : "011",
+                "firstName" : "David",
+                "lastName" : "Branton",
+                "role" : "Android Team Lead",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png",
+                "teamLead" : true
+            },
+            {
+                "id" : "012",
+                "firstName" : "Dre",
+                "lastName" : "Pilipczuk",
+                "role" : "Android Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "013",
+                "firstName" : "Ray",
+                "lastName" : "Britton",
+                "role" : "Android Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "014",
+                "firstName" : "Charly",
+                "lastName" : "Murillo",
+                "role" : "Android Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            }
+        ]   
+    },
+    {
+        "teamName" : "Web",
+        "members" : [{
+                "id" : "015",
+                "firstName" : "Ryan",
+                "lastName" : "French",
+                "role" : "Web Team Lead",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png",
+                "teamLead" : true
+            },
+            {
+                "id" : "016",
+                "firstName" : "James",
+                "lastName" : "Ward",
+                "role" : "Web Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "018",
+                "firstName" : "Adam",
+                "lastName" : "Smith",
+                "role" : "Web Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "019",
+                "firstName" : "Leonard",
+                "lastName" : "Da Costa",
+                "role" : "Web Developer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            }
+        ]   
+    },
+    {
+        "teamName" : "Design",
+        "members" : [{
+                "id" : "020",
+                "firstName" : "Hannah",
+                "lastName" : "Tempest",
+                "role" : "Design Team Lead",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png",
+                "teamLead" : true
+            },
+            {
+                "id" : "021",
+                "firstName" : "Ellis",
+                "lastName" : "Reed",
+                "role" : "Designer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "022",
+                "firstName" : "Pete",
+                "lastName" : "Horsham",
+                "role" : "Designer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "023",
+                "firstName" : "Hemel",
+                "lastName" : "Dave",
+                "role" : "Designer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            },
+            {
+                "id" : "024",
+                "firstName" : "Hannah",
+                "lastName" : "Corke",
+                "role" : "Designer",
+                "profileImageURL" : "http://developers.mub.lu/resources/profilePlaceholder.png"
+            }
+        ]   
+    }
+]
