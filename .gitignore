@@ -1,4 +1,5 @@
-
+# Jekyll
+_site/
 
 # Created by https://www.gitignore.io/api/macos
 
@@ -28,6 +29,5 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
 
 # End of https://www.gitignore.io/api/macos
