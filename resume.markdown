@@ -10,16 +10,16 @@ permalink: /resume/
 
 [**GitHub**](https://github.com/alaphao) - [**Stack Overflow**](https://stackoverflow.com/users/3462308/alaphao) - [**LinkedIn**](https://au.linkedin.com/in/aleph-retamal-640bb589) - [**App Store**](https://itunes.apple.com/us/developer/aleph-retamal/id971941244)
 
-I started programming from a very young age. Since then, I had the opportunity to develop for many platforms and technologies. Currently, I'm focused on developing software for Apple platforms and creating tools to help with developer productivity.
+I started programming from a very young age. Since then, I had the opportunity to develop for many platforms and technologies. Currently, I'm focused on developing software for Apple platforms and creating tools to enhance developer productivity.
 
 ### Summary
 
 - Strong knowledge of iOS and Swift
-- Knowledgable on Reactive Programming
-- Had previous experience with Android (Java and Kotlin) with two apps launched on Play Store
-- Enjoy working in other platforms, had previous experience with full-stack development
-- Enjoy building automation tools and scripts
-- Open Source
+- Comfortable programming in other languages
+- Comfortable with multiple programming paradigms
+- Experienced with DevOps and mobile tooling
+- Previous experience creating Android Apps (Kotlin)
+- Previous experience with web full-stack development
 
 ## Experience
 
@@ -33,9 +33,11 @@ Working as **iOS** **Software** **Engineer**
 
 Airtasker is a trusted community platform that connects people who need to outsource tasks and find local services, with people who are looking to earn money and ready to work.
 
-On Airtasker I’ve been working on a team focused on business projects, I take part in the whole process, from ideation to deployment. The projects I work on are mostly user-facing features that will be available on the iOS app, some times it's an update to an existing feature, some times it's an entirely new feature. These are projects that always align with the company goals, and all of these projects have a high value for the company.
+At Airtasker, I worked for two years on a product team focused on business projects. I took part in the whole process, from ideation to deployment. However, my primary responsibility was to deliver features to the iOS app under pressure and tight deadlines.
 
-I'm also very proud of participating and starting all sorts of internal projects to build tools to support business projects, from code generation tools to a back-end for front-end to automation pipelines.
+Later I joined the platform tooling team. A team focused on developing and maintaining tools to enhance other engineers' productivity. While on this team, I worked on a few projects not related to iOS and had the responsibility of being an ambassador for the iOS team, raising platform and tooling related issues.
+
+Besides my primary responsibilities, I always put in the extra effort to make sure the iOS app and the team kept getting better. The two most impactful things were leading the codebase migration to a reactive paradigm, and creating automated code generation pipelines.
 
 **Some technologies I worked close with**
 
@@ -48,16 +50,17 @@ I'm also very proud of participating and starting all sorts of internal projects
 
 **Responsibilities and Highlights**
 
-- Worked closely with product and design to deliver many features
+- Worked closely with product and design to deliver many features to the iOS app
+- Mentored developers from multiple platforms on ReactiveX and RxSwift
+- Led the migration to a reactive codebase using RxSwift
 - Maintained a codebase with more than 100,000 lines of code
-- Helped building and maintaining CI & CD pipelines
-- Built tools to auto generate code from contracts and definitions
-- Built scripts to help migrating from Objective-C to Swift and XCTests to Nimble
-- Automated pull request review
-- Ran regular sessions for mentoring developers from multiple platforms on ReactiveX and RxSwift
+- Helped to build and maintain CI & CD pipelines
+- Completely automated the iOS release train
+- Developed tools to auto-generate code from contracts and definitions
+- Created scripts to migrate from Objective-C to Swift and XCTests to Nimble
+- Configured automated pull request review on multiple codebases using Danger
 - Helped defining the hiring process and reviewing candidates
-- Helped breaking up the app into modules
-- Helped to move the codebase from Objective-C to Swift
+- Helped to break up the app into modules
 
 --
 
@@ -69,7 +72,7 @@ Working as **CTO**
 
 **Summary**
 
-Mova is a gym coach on your phone. By strapping the phone to the user's arm with an armband, it understands the user movements and generates insights for him to achieve peak performance. 
+Mova is a gym coach on your phone. By strapping the phone to the user's arm with an armband, it understands the user movements and generates insights for him to achieve peak performance.
 
 We started Mova after winning a hackathon. A few months later we got into one of Australia’s leading Incubators, and I left my previous job. Running the company for ten months was a crazy experience, always rushing to get things done, endless hours of researching, and many nights without sleep.
 
@@ -103,7 +106,7 @@ Working as a **Mobile and Full-stack developer**
 
 Ensemble is a consulting company located in Sydney with a technology branch focused on delivering innovations in productivity.
 
-I started working on Ensemble from Brazil as a Freelancer. After a few months, I got hired full-time and moved to Australia. My job there was to create and maintain the Android (Kotlin) and iOS (Swift) apps for their primary product, as well as work on the web version's back-end (Ruby on Rails) and front-end (Angular).
+I started working at Ensemble as a Freelancer while living in Brazil. After a few months, I got hired full-time and moved to Australia. My job there was to create and maintain the Android (Kotlin) and iOS (Swift) apps for their primary product, as well as work on the web version's back-end (Ruby on Rails) and front-end (Angular).
 
 **Responsibilities and Highlights**
 
@@ -180,5 +183,3 @@ On **2015 (1 year)**
 **Mackenzie Presbyterian University - São Paulo, Brazil**
 
 From **2014 Q1** to **2016 Q3**
-
-
