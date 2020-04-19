@@ -1,14 +1,10 @@
 ---
-layout: page
+layout: default
 title: Resume
-permalink: /resume/
+permalink: /resume
 ---
 
 {% assign resume = site.data.resume %}
-
-## Info
-
-### General
 
 {% for link in resume.info.links %}
 [**{{ link.name }}**]({{ link.url }}){% if forloop.last != true %} -{% endif %}
@@ -16,54 +12,19 @@ permalink: /resume/
 
 {{ resume.info.description }}
 
-### Summary
-
-{% for summary_item in resume.info.summary %}
-- {{ summary_item }}
-{%- endfor %}
-
-## Experience
+### Employment History and Highlights
 
 {% for job in resume.job_history %}
-### {{ job.company_name }}
+**{{ job.company_name }}** / {{ job.job_title }} / {{ job.start_date }} ~ {{ job.end_date }} (**{{ job.duration }}**)
 
-From **{{ job.start_date }}** to **{{ job.end_date }}**
-
-Working as **{{ job.job_title }}**
-
-**Summary**
-
-{{ job.summary | join: "
-
-"}}
-
-**Technologies I worked close with**
-
-{% for tech in job.technologies %}
-- {{ tech }}
-{%- endfor %}
-
-**Responsibilities and Highlights**
-
-{% for resp in job.responsibilities_and_highlights %}
+{% for resp in job.highlights %}
 - {{ resp }}
 {%- endfor %}
 
---
-
 {% endfor %}
 
-## Education
+### Education
 
 {% for edu in resume.education %}
-### {{ edu.title }}
-
-{% if edu.institution %}
-**{{ edu.institution.name }} - {{ edu.institution.location }}**
-{% endif %}
-
-{{ edu.description }}
-
---
-
+**{{ edu.title }}** {% if edu.institution %}- {{ edu.institution.name }} ({{ edu.institution.location }}) {% endif %}- {{ edu.description }}
 {% endfor %}

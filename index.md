@@ -8,7 +8,7 @@ Hello!
 
 My name is Aleph. I currently work as a Software Engineer, developing software for the Apple platforms.
 
-When I'm not behind a screen, I'm training Brazilian Jiu-Jitsu (BJJ).
+When I'm not behind a screen, I'm training Brazilian Jiu-Jitsu.
 
 That's all, folks! 🐰
 
