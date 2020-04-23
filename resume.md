@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Resume
-permalink: /resume
+permalink: /resume/
 ---
 
 {% assign resume = site.data.resume %}
