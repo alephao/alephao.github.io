@@ -18,7 +18,7 @@ apps:
 
 # Freelance 
 - name: OmniDoc
-  icon: none
+  icon: omnidoc
   app_store_link: https://apps.apple.com/br/app/omnidoc/id1079581035
   category: freelance
 
@@ -28,23 +28,23 @@ apps:
   category: freelance
 
 - name: Property Carnivores
-  icon: none
+  icon: property-carnivores
   app_store_link: unavailable
   category: freelance
 
 - name: QuiCard
-  icon: none
+  icon: quicard
   app_store_link: unavailable
   category: freelance
 
 # Volunteer
 - name: OurBigKitchen
-  icon: none
+  icon: our-big-kitchen
   app_store_link: unavailable
   category: volunteer
 
 - name: TIA
-  icon: none
+  icon: tia
   app_store_link: unavailable
   category: volunteer
 
@@ -55,11 +55,11 @@ apps:
   category: personal
 
 - name: NineNine
-  icon: none
+  icon: ninenine
   app_store_link: https://apps.apple.com/au/app/ninenine-try-getting-close-to-100/id1216962580
   category: personal
 
 - name: CopyCat
-  icon: none
+  icon: copycat
   app_store_link: https://apps.apple.com/br/app/copycat-mimic-game/id975945076
   category: personal
