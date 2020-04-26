@@ -1,0 +1,65 @@
+---
+apps:
+# Company
+- name: Airtasker
+  icon: airtasker
+  app_store_link: https://apps.apple.com/au/app/airtasker/id512137061
+  category: company
+
+- name: Mova
+  icon: mova
+  app_store_link: unavailable
+  category: company
+
+- name: MaestroUX
+  icon: maestroux
+  app_store_link: https://apps.apple.com/au/app/maestroux/id1082576416
+  category: company
+
+# Freelance 
+- name: OmniDoc
+  icon: none
+  app_store_link: https://apps.apple.com/br/app/omnidoc/id1079581035
+  category: freelance
+
+- name: Inspiro Health
+  icon: inspiro-health
+  app_store_link: unavailable
+  category: freelance
+
+- name: Property Carnivores
+  icon: none
+  app_store_link: unavailable
+  category: freelance
+
+- name: QuiCard
+  icon: none
+  app_store_link: unavailable
+  category: freelance
+
+# Volunteer
+- name: OurBigKitchen
+  icon: none
+  app_store_link: unavailable
+  category: volunteer
+
+- name: TIA
+  icon: none
+  app_store_link: unavailable
+  category: volunteer
+
+# Personal
+- name: WhiteBoard
+  icon: whiteboard
+  app_store_link: https://apps.apple.com/br/app/whiteboard/id1013475133
+  category: personal
+
+- name: NineNine
+  icon: none
+  app_store_link: https://apps.apple.com/au/app/ninenine-try-getting-close-to-100/id1216962580
+  category: personal
+
+- name: CopyCat
+  icon: none
+  app_store_link: https://apps.apple.com/br/app/copycat-mimic-game/id975945076
+  category: personal
