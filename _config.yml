@@ -21,7 +21,7 @@
 title: Aleph Retamal
 # email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My personal website.
+  Software Engineer
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://alephao.com" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
@@ -32,7 +32,7 @@ theme: minima
 # plugins:
 #   - jekyll-feed
 header_pages:
-  - resume.md
+  - blog.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

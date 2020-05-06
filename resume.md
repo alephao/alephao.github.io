@@ -23,8 +23,8 @@ permalink: /resume/
 
 {% endfor %}
 
-### Education
+<!-- ### Education
 
 {% for edu in resume.education %}
 **{{ edu.title }}** {% if edu.institution %}- {{ edu.institution.name }} ({{ edu.institution.location }}) {% endif %}- {{ edu.description }}
-{% endfor %}
+{% endfor %} -->
