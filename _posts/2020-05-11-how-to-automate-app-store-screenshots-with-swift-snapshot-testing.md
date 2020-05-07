@@ -2,6 +2,7 @@
 layout: post
 title: How to Automate App Store Screenshots with swift-snapshot-testing
 tags: [ios, tooling, swift, snapshot, app store]
+categories: [blog]
 ---
 
 {% assign assets_path = "/assets/posts/appstore_screenshots" %}
@@ -378,7 +379,7 @@ It should generate all the screenshots.
 
 Congratulations! You automated the screenshots generation of your app!
 
-### Conclusion
+### Final Words
 
 I hope you enjoyed learning how you can use a snapshot library to generate screenshots for your app page. Now you can integrate this into your pipeline and save some time.
 
