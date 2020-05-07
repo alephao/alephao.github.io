@@ -28,6 +28,7 @@ permalink: /:categories/:title:output_ext
 theme: minima
 header_pages:
   - blog.md
+future: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
