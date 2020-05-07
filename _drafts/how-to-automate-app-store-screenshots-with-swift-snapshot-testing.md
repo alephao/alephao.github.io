@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Automate App Store Screenshots with swift-snapshot-testing
-tags: [ios, tooling, swift, snapshot]
+tags: [ios, tooling, swift, snapshot, app store]
 ---
 
 {% assign assets_path = "/assets/posts/appstore_screenshots" %}
@@ -236,6 +236,87 @@ Now let's substitute the `assertSnapshot` function with the `saveScreenshot` fun
 saveScreenshot(matching: vc, as: .image(on: device), dir: folderName(for: language))
 ```
 
+The final version of `AppStoreScreenshots.swift` should look like this:
+
+```swift
+import XCTest
+import MyAwesomeAppFramework
+import SnapshotTesting
+import SwiftUI
+
+class AppStoreScreenshots: XCTestCase {
+
+  override func setUpWithError() throws {}
+  override func tearDownWithError() throws {}
+
+  func withEnvironment(
+    _ env: MyAwesomeAppFramework.Environment,
+    body: @escaping () -> Void) {
+    let oldEnv = AppEnvironment.shared.env
+    AppEnvironment.shared.env = env
+    body()
+    AppEnvironment.shared.env = oldEnv
+  }
+
+  func withEnvironment(
+    userDefaults: UserDefaults = AppEnvironment.shared.userDefaults,
+    language: Language = AppEnvironment.shared.language,
+    body: @escaping () -> Void) {
+    let env = Environment(userDefaults: userDefaults, language: language)
+    withEnvironment(env, body: body)
+  }
+
+  func testScreenshots() throws {
+    let userDefaults = UserDefaults()
+
+    let languages: [Language] = [.enAU, .enUS, .es, .pt]
+    let devices: [ViewImageConfig] = [.iPhoneXsMax, .iPhone8Plus]
+
+    for language in languages {
+      for device in devices {
+        withEnvironment(userDefaults: userDefaults, language: language) {
+          let view = GreetingView()
+          let vc = UIHostingController(rootView: view)
+          saveScreenshot(matching: vc, as: .image(on: device), dir: folderName(for: language))
+        }
+      }
+    }
+  }
+}
+
+func saveScreenshot(
+  matching value: UIViewController,
+  as snapshotting: Snapshotting<UIViewController, UIImage>,
+  dir: String,
+  file: StaticString = #file,
+  testName: String = #function,
+  line: UInt = #line
+  ) {
+  let snapshotDirectory = ProcessInfo.processInfo.environment["FASTLANE_SCREENSHOTS_PATH"]! + "/" + dir
+
+  let failure = verifySnapshot(
+    matching: value,
+    as: snapshotting,
+    record: true,
+    snapshotDirectory: snapshotDirectory,
+    file: file,
+    testName: testName,
+    line: line
+  )
+  guard let message = failure else { return }
+  XCTFail(message, file: file, line: line)
+}
+
+func folderName(for language: Language) -> String {
+  switch language {
+    case .enUS: return "en-US"
+    case .enAU: return "en-AU"
+    case .es: return "es-ES"
+    case .pt: return "pt-BR"
+  }
+}
+```
+
 Our test target is ready! Rerun the tests with `Cmd+U` and check the results. You should have all the screenshots generated in `fastlane/screenshots` and separated by language in folders. This is how the tree should look like:
 
 ```
@@ -267,7 +348,7 @@ $ bundle install
 $ bundle exec fastlane init
 ```
 
-Choose **Manual Setup** and press enter until the wizard finishes. 
+Choose **Manual Setup** and press enter until the setup wizard finishes. 
 
 To generate our screenshots, we only need to run the tests on the `AppStoreScreenshots` scheme. To run test we can use the [`scan`](http://docs.fastlane.tools/actions/scan/#scan) action. Open `fastlane/Fastfile` on a text editor and let's add a new lane to generate the screenshots.
 
@@ -292,3 +373,15 @@ We're ready! Delete the `fastlane/screenshots` folder to make sure we are regene
 ```
 bundle exec fastlane ios generate_screenshots
 ```
+
+It should generate all the screenshots.
+
+Congratulations! You automated the screenshots generation of your app!
+
+### Conclusion
+
+I hope you enjoyed learning how you can use a snapshot library to generate screenshots for your app page. Now you can integrate this into your pipeline and save some time.
+
+You can check the final project [here](http://github.com/alephao/tutorial-appstore-snapshot).
+
+Thanks for reading!
