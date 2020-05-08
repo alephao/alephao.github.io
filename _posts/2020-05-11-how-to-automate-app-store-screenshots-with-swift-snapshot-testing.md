@@ -9,7 +9,7 @@ categories: [blog]
 
 You finished your app, and now you have to take screenshots for your app's page on App Store. Your app supports many languages and devices, so you decided to automate this task. The only tool you heard about is [fastlane snapshot](https://docs.fastlane.tools/actions/snapshot/), and you decided to try it.
 
-Since snapshot uses [XCUITest](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/09-ui_testing.html), you create a UI Test and try to write some code that will get you to the screen you want, with the data you want. After some time you realise that it's harder than you thought. Stubbing data is hard and intrusive. The test is fragile. 
+Since snapshot uses [XCUITest](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/09-ui_testing.html), you create a UI Test and try to write some code that will get you to the screen you want, with the data you want. After some time, you realise that it's harder than you thought. Stubbing data is hard and intrusive. The test is fragile. 
 
 Can't I just instantiate my View Controller with precisely the data I want and then take a screenshot of it? Well, the answer is yes, but you'll have to let go of XCUITest.
 
@@ -25,9 +25,9 @@ The starter project contains only one screen, the GreetingView. This screen show
   <img src="{{ assets_path }}/app-screenshot-simulator.png" alt="app-screenshot-simulator" width="231" style="box-shadow: 0 0 5px #ccc;">
 </div>
 
-There are two targets in this project, an application target and a dynamic framework target. The app target only contains the `AppDelegate.swift`, `SceneDelegate.swift`, and some supporting files. The dynamic framework is where everything else lives. It includes the views, business logic, localized strings, and some helpers.
+There are two targets in this project: an application target and a dynamic framework target. The app target only contains the `AppDelegate.swift`, `SceneDelegate.swift`, and some supporting files. The dynamic framework is where everything else lives. It includes the views, business logic, localized strings, and some helpers.
 
-To control effects from the outside world, we're using the Service Locator pattern explained [here](https://vimeo.com/291588126). To handle localized strings, we're using some ideas from the [kickstarter/ios-oss](https://github.com/kickstarter/ios-oss) project, the [Language.swift](https://github.com/kickstarter/ios-oss/blob/d88e9c0c6e9bfafe0006da7e67091afddbec8d3a/Library/Language.swift#L4) and [LocalizedString.swift](https://github.com/kickstarter/ios-oss/blob/) files.
+To control effects from the outside world, we are using the Service Locator pattern explained [here](https://vimeo.com/291588126). To handle localized strings, we're using some ideas from the [kickstarter/ios-oss](https://github.com/kickstarter/ios-oss) project, the [Language.swift](https://github.com/kickstarter/ios-oss/blob/d88e9c0c6e9bfafe0006da7e67091afddbec8d3a/Library/Language.swift#L4) and [LocalizedString.swift](https://github.com/kickstarter/ios-oss/blob/) files.
 
 There is a playground file `MyAwesomeApp.playground` that renders the GreetingView in the playground live view. Change the `language` variable to `.pt` and check the results in the live view. You can also try different values for the `userDefaults`.
 
@@ -48,10 +48,10 @@ First we need to create the test target that will run our Snapshot tests:
 
 ### Adding the Snapshot Library
 
-We have our test target ready, now let's add the swift-snapshot-testing library. I'll be using Swift Package Manager in this tutorial.
+We have our test target ready, now let's add the swift-snapshot-testing library. We will be using Swift Package Manager in this tutorial.
 
 1. Select **File ▸ Swift Packages ▸ Add Package Dependency..**.
-1. Paste this url in the textfield `https://github.com/pointfreeco/swift-snapshot-testing.git`.
+1. Paste this URL in the textfield: `https://github.com/pointfreeco/swift-snapshot-testing.git`.
 1. Click **Next** twice.
 1. Select the **AppStoreScreenshots** target.
 1. Click **Finish**.
@@ -60,7 +60,7 @@ We have our test target ready, now let's add the swift-snapshot-testing library.
 
 ### Adding a Snapshot Test
 
-Now we're ready to start taking our screenshots, so let's jump straight to it. Open `AppStoreScreenshots.swift` and add the following import statements:
+Now we are ready to start taking our screenshots, so let's jump straight to it. Open `AppStoreScreenshots.swift` and add the following import statements:
 
 ```swift
 import MyAwesomeAppFramework // Access to GreetingView
@@ -90,7 +90,7 @@ And that's it. You have your first screenshot test. Run the test with `Cmd+U` an
 <PROJECT_ROOT>/AppStoreScreenshots/__Snapshots__/AppStoreScreenshots/
 ```
 
-The test work, but it's not very reliable because if we change the language of the simulator, or if we previously changed the value of `UserDefaults`, we'll get a different result. To confirm this, select **Edit Scheme ▸ Test ▸ Options** and change the **Application Language** to **Portuguese (Brazil)**. Now rerun the tests with `Cmd+U` and you'll see that the new screenshot is generated in Portuguese.
+The test works, but it's not very reliable because if we change the language of the simulator, or if we previously changed the value of `UserDefaults`, we'll get a different result. To confirm this, select **Edit Scheme ▸ Test ▸ Options** and change the **Application Language** to **Portuguese (Brazil)**. Now rerun the tests with `Cmd+U` and you'll see that the new screenshot is generated in Portuguese.
 
 ### Overriding the Environment
 
@@ -133,7 +133,7 @@ func testScreenshots() throws {
 
 Now the screen will always be rendered with `.enUS` and the device language will be ignored.
 
-### Generating All The Screenshots
+### Generating All the Screenshots
 
 We want to generate screenshots for all supported languages, iPhone-6.5 inch and iPhone-5.5 inch. To get all the possible combinations, we can loop through all languages and devices and then take the snapshot. Add the following snippet to your test, before the `withEnvironment` call:
 
@@ -176,9 +176,9 @@ Rerun the tests and you should have eight screenshots generated inside the `__Sn
 
 Unfortunately, the names of the files aren't helpful. If we want to use something like [deliver](https://docs.fastlane.tools/actions/deliver/) to upload the screenshots, we need to separate them by language. Let's tackle this issue in the next section.
 
-### Saving Screenshots In Fastlane Directory
+### Saving Screenshots in Fastlane Directory
 
-Deliver looks for the app screenshots on `<PROJECT_ROOT>/fastlane/screenshots/<LANGUAGE>`. So our next goal is to save the screenshots there.
+Deliver looks for the app screenshots on `<PROJECT_ROOT>/fastlane/screenshots/<LANGUAGE>`. So, our next goal is to save the screenshots there.
 
 The first thing we need to do is to get access to the path to **fastlane** in our `AppStoreScreenshots.swift` file. To get access to the path, we'll inject an environment variable through the `AppStoreScreenshots` scheme by following these steps:
 
@@ -340,9 +340,9 @@ Our test target is ready! Rerun the tests with `Cmd+U` and check the results. Yo
             └── testScreenshots.2.png
 ```
 
-### Using Fastlane To Generate The Screenshots
+### Using Fastlane To Generate the Screenshots
 
-We have everything ready on the Xcode side, but how can we integrate te screenshots generation with fastlane? Let's start by initialising fastlane. Open your terminal, go to the project folder and run:
+We have everything ready on the Xcode side, but how can we integrate the screenshot generation with fastlane? Let's start by initialising fastlane. Open your terminal, go to the project folder and run:
 
 ```
 $ bundle install
@@ -351,7 +351,7 @@ $ bundle exec fastlane init
 
 Choose **Manual Setup** and press enter until the setup wizard finishes. 
 
-To generate our screenshots, we only need to run the tests on the `AppStoreScreenshots` scheme. To run test we can use the [`scan`](http://docs.fastlane.tools/actions/scan/#scan) action. Open `fastlane/Fastfile` on a text editor and let's add a new lane to generate the screenshots.
+To generate our screenshots, we only need to run the tests on the `AppStoreScreenshots` scheme. To run our tests we can use the [`scan`](http://docs.fastlane.tools/actions/scan/#scan) action. Open `fastlane/Fastfile` on a text editor and let's add a new lane to generate the screenshots.
 
 ```ruby
 desc "Generate screenshots for App Store"
