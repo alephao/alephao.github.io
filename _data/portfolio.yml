@@ -59,7 +59,7 @@ apps:
   app_store_link: https://apps.apple.com/au/app/ninenine-try-getting-close-to-100/id1216962580
   category: personal
 
-- name: CopyCat
-  icon: copycat
-  app_store_link: https://apps.apple.com/br/app/copycat-mimic-game/id975945076
+- name: Simon
+  icon: simon
+  app_store_link: https://apps.apple.com/au/app/simon-mimic-game/id975945076
   category: personal
