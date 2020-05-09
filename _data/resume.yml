@@ -34,8 +34,8 @@ job_history:
   end_date: Feb 2017
   job_title: Mobile and Full-Stack Developer
   highlights:
-  - Delivered the iOS, Android, and web front-end of the company's main product
-  - Set up Jenkins CI for backend, and mobile from scratch
+  - Delivered the iOS, Android, and web front-end of the company's main product, MaestroUX.
+  - Set up Jenkins CI for backend and mobile from scratch
   - Created a Virtual Reality experience to explaining the company's values
   duration: 9m
 - company_name: Heptagon
@@ -44,7 +44,7 @@ job_history:
   job_title: Full-Stack Developer
   highlights:
   - Designed, developed, and delivered multiple iOS, Android and Web applications
-  - Led a team of 6 mobile developers to deliver pre-paid credit card app in a tight
+  - Led a team of 6 mobile developers to deliver a pre-paid credit card app in a tight
     deadline
   duration: 3y
 education:
@@ -54,7 +54,7 @@ education:
   institution:
     name: Apple Developer Academy
     location: São Paulo, Brazil
-  description: 2015 ~ 2016 (**1y**)
+  description: 2015 ~ 2015 (**1y**)
 - title: Bachelor in Electronic/Computer Engineering (Dropped out)
   institution:
     name: Mackenzie Presbyterian University
