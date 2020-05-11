@@ -5,8 +5,6 @@ tags: [ios, tooling, swift, snapshot, app store]
 categories: [post]
 ---
 
-{% assign assets_path = "/assets/post/how-to-automate-app-store-screenshots-with-swift-snapshot-testing" %}
-
 You finished your app, and now you have to take screenshots for your app's page on App Store. Your app supports many languages and devices, so you decided to automate this task. The only tool you heard about is [fastlane snapshot](https://docs.fastlane.tools/actions/snapshot/), and you decided to try it.
 
 Since snapshot uses [XCUITest](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/testing_with_xcode/chapters/09-ui_testing.html), you create a UI Test and try to write some code that will get you to the screen you want, with the data you want. After some time, you realise that it's harder than you thought. Stubbing data is hard and intrusive. The test is fragile. 
@@ -14,6 +12,8 @@ Since snapshot uses [XCUITest](https://developer.apple.com/library/archive/docum
 Can't I just instantiate my View Controller with precisely the data I want and then take a screenshot of it? Well, the answer is yes, but you'll have to let go of XCUITest.
 
 In this tutorial, we'll use the snapshot testing library [pointfreeco/swift-snapshot-testing](https://github.com/pointfreeco/swift-snapshot-testing.git) to take screenshots of our app and make them ready for [fastlane deliver](https://docs.fastlane.tools/actions/deliver/) to use.
+
+{% assign assets_path = "/assets/post/how-to-automate-app-store-screenshots-with-swift-snapshot-testing" %}
 
 ### Getting Started
 
