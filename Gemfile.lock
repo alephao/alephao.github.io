@@ -252,6 +252,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll-feed
   jekyll-theme-hydeout (~> 3.4)
   rake
   tzinfo (~> 1.2)

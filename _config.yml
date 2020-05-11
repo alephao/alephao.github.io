@@ -20,16 +20,17 @@
 
 title: Aleph Retamal
 description: >-
-  Software Engineer
+  A blog about Swift, iOS and tooling.
 url: "https://alephao.com"
 github_username: alephao
 
 permalink: /:categories/:title:output_ext
 remote_theme: fongandrew/hydeout
 paginate: 5
-header_pages:
-  - index.html
 future: true
+
+plugins:
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
