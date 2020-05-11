@@ -2,10 +2,10 @@
 layout: post
 title: How to Automate App Store Screenshots with swift-snapshot-testing
 tags: [ios, tooling, swift, snapshot, app store]
-categories: [blog]
+categories: [post]
 ---
 
-{% assign assets_path = "/assets/posts/appstore_screenshots" %}
+{% assign assets_path = "/assets/post/how-to-automate-app-store-screenshots-with-swift-snapshot-testing" %}
 
 You finished your app, and now you have to take screenshots for your app's page on App Store. Your app supports many languages and devices, so you decided to automate this task. The only tool you heard about is [fastlane snapshot](https://docs.fastlane.tools/actions/snapshot/), and you decided to try it.
 

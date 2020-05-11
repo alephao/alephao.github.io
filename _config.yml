@@ -26,8 +26,7 @@ github_username: alephao
 
 permalink: /:categories/:title:output_ext
 theme: minima
-header_pages:
-  - blog.md
+header_pages: [none.md]
 future: true
 
 # Exclude from processing.
