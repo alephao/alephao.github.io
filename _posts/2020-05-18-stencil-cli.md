@@ -71,13 +71,19 @@ Initially, I thought we could just pass the YAML file and the stencil template t
 
 ### Stencil CLI
 
-After going through this, I assembled a small CLI tool to do precisely that. You can pass a YAML or a JSON file plus a stencil template, and it generates the file. With Stencil CLI you can use the following command to render a stencil template:
+After going through this, I assembled a small CLI tool to do precisely that. You can install stencil-cli via homebrew:
+
+```
+brew install alephao/formulae/stencil
+```
+
+Then you can use the command `stencil render` to render a stencil template:
 
 ```
 stencil render -t path/to/template.stencil -d path/to/datasource.yaml -o path/to/output.swift
 ```
 
-You can find the installation instructions in the [GitHub repo](https://github.com/alephao/Stencil-CLI).
+Check out the repo [alephao/Stencil-CLI](https://github.com/alephao/Stencil-CLI) for more information.
 
 ### Final Words
 
