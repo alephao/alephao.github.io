@@ -5,7 +5,7 @@ tags: [swift, tooling, stencil, cli, sourcery, swiftgen, gyb, code generation]
 categories: [post]
 ---
 
-In a previous company I worked in, we decided to consolidate the event tracking on all platforms. To do that, we created a YAML file describing all events we wanted to track. The description of an event would look similar to this:
+In a previous company I worked for, we decided to consolidate the event tracking on all platforms. To do that, we created a YAML file describing all events we wanted to track. The description of an event would look similar to this:
 
 ```yaml
 user_sign_up_completed:
@@ -63,9 +63,9 @@ extension TrackingEvent {
 }
 ```
 
-At first, it might not look like a lot of work, but when we grow to hundreds of events with multiple people updating the file every week, keeping the codebase in sync with the data source just becomes an impossible task.
+At first, it might not look like a lot of work, but when we grow the file to hundreds of event definitions with multiple people updating the file every week, keeping the codebase in sync with the data source just becomes an impossible task.
 
-Since it's not feasible to do this work manually, we turned to code generation. On the iOS platform, we were already writing [Stencil](https://github.com/stencilproject/Stencil) templates for [SwiftGen](https://github.com/SwiftGen/SwiftGen) and [Sourcery](https://github.com/krzysztofzablocki/Sourcery), so it would be great if we could Stencil for this case too.
+Since it's not feasible to do this work manually, we turned to code generation. On the iOS platform, we were already writing [Stencil](https://github.com/stencilproject/Stencil) templates for [SwiftGen](https://github.com/SwiftGen/SwiftGen) and [Sourcery](https://github.com/krzysztofzablocki/Sourcery), so it would be great if we could use Stencil for this case too.
 
 Initially, I thought we could just pass the YAML file and the stencil template to a command-line tool, and we would get our new file generated, but that wasn't the case. Since Stencil is a library, we actually need to assemble a program and use it as a dependency.
 
