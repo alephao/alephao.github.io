@@ -27,7 +27,7 @@ The starter project contains only one screen, the GreetingView. This screen show
 
 There are two targets in this project: an application target and a dynamic framework target. The app target only contains the `AppDelegate.swift`, `SceneDelegate.swift`, and some supporting files. The dynamic framework is where everything else lives. It includes the views, business logic, localized strings, and some helpers.
 
-To control effects from the outside world, we are using the Service Locator pattern explained [here](https://vimeo.com/291588126). To handle localized strings, we're using some ideas from the [kickstarter/ios-oss](https://github.com/kickstarter/ios-oss) project, the [Language.swift](https://github.com/kickstarter/ios-oss/blob/d88e9c0c6e9bfafe0006da7e67091afddbec8d3a/Library/Language.swift#L4) and [LocalizedString.swift](https://github.com/kickstarter/ios-oss/blob/) files.
+To control effects from the outside world, we are using the Service Locator pattern explained [here](https://vimeo.com/291588126). To handle localized strings, we're using some ideas from the [kickstarter/ios-oss](https://github.com/kickstarter/ios-oss) project, the [Language.swift](https://github.com/kickstarter/ios-oss/blob/d88e9c0c6e9bfafe0006da7e67091afddbec8d3a/Library/Language.swift#L4) and [LocalizedString.swift](https://github.com/kickstarter/ios-oss/blob/d88e9c0c6e9bfafe0006da7e67091afddbec8d3a/Library/LocalizedString.swift#L4) files.
 
 There is a playground file `MyAwesomeApp.playground` that renders the GreetingView in the playground live view. Change the `language` variable to `.pt` and check the results in the live view. You can also try different values for the `userDefaults`.
 
